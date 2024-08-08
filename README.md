@@ -3,7 +3,13 @@ Browser load testing the IDP using k6s
 
 ## Setup
 1. `brew install k6`
-2. Fill Microsoft credentials to `credentials.js` for example script (`login.js`)
+2. Fill Microsoft credentials to `credentials.js` for example script (`login.js`), either by
+    1. Writing credentials directly to file
+    2. Using [Bitwarden CLI](https://bitwarden.com/help/cli) to set env variables in Bash, eg
+       ```bash
+        export EMAIL=$(bw get username Microsoft)
+        export PASSWORD=$(bw get password Microsoft)
+       ```
 
 Docs for [installing k6](https://grafana.com/docs/k6/latest/set-up/install-k6/)
 
