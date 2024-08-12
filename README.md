@@ -3,7 +3,13 @@ Browser load testing the IDP using k6s
 
 ## Setup
 1. `brew install k6`
-2. Fill Microsoft credentials to `credentials.js` for example script (`login.js`)
+2. Fill Microsoft credentials to `credentials.js` for example script (`login.js`), either by
+    1. Writing credentials directly to file
+    2. Setting env variables, eg
+       ```bash
+        export EMAIL="user@example.com"
+        export PASSWORD="example-password"
+       ```
 
 Docs for [installing k6](https://grafana.com/docs/k6/latest/set-up/install-k6/)
 
